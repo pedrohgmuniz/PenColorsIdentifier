@@ -8,9 +8,9 @@
 import SwiftUI
 
 let onBoardingText = """
-Este app identifica as cores de canetas. Ao clicar no botão de 'começar' abaixo, sempre que você entrar no app, a câmera do seu aparelho será ativada. Então basta apontá-la para a caneta cuja cor você quer identificar.
+Este app identifica as cores de canetas através da câmera do seu celular. Ao clicar no botão abaixo, a câmera do seu aparelho será iniciada. Então basta apontá-la para a caneta cuja cor você quer identificar.
 
-Você pode acessar este tutorial novamente clicando no botão de ajuda.
+Você pode acessar esta explicação novamente clicando no botão de ajuda.
 """
 
 struct ContentView: View {
@@ -18,6 +18,7 @@ struct ContentView: View {
         NavigationView {
             VStack {
                 Spacer()
+
                 Text(onBoardingText)
                     .font(.system(size: 20, weight: .regular))
 
@@ -26,12 +27,16 @@ struct ContentView: View {
                 Button {
                     // action
                 } label: {
-                    Text("Identificar cor da caneta")
-                        .font(.system(size: 20, weight: .bold))
+                    Text("Iniciar a câmera")
+                        .font(.system(size: 24, weight: .bold))
                         .frame(width: 280, height: 50)
-                        .foregroundColor(.white)
-                        .background(.blue)
-                        .cornerRadius(10)
+                        .padding(.trailing, 12)
+                        .padding(.leading, 12)
+                        .padding(.top, 10)
+                        .padding(.bottom, 10)
+                        .foregroundColor(Color("customLightGray"))
+                        .background(Color("customOrange"))
+                        .cornerRadius(15)
                 }
 
                 Spacer()
@@ -39,6 +44,7 @@ struct ContentView: View {
             .padding(.trailing, 20)
             .padding(.leading, 20)
             .navigationTitle("Tutorial rápido")
+            .background(Color("customBlue"))
 //            .border(.red)
         }
 //        .border(.red)
