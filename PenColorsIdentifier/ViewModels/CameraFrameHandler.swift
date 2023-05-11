@@ -46,7 +46,7 @@ class CameraFrameHandler: NSObject, ObservableObject {
         let videoOutput = AVCaptureVideoDataOutput()
 
         guard permissionGranted else { return }
-        guard let videoDevice = AVCaptureDevice.default(.builtInDualWideCamera, for: .video, position: .back) else { return }
+        guard let videoDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back) else { return }
         guard let videoDeviceInput = try? AVCaptureDeviceInput(device: videoDevice) else { return }
         guard captureSesion.canAddInput(videoDeviceInput) else { return }
         captureSesion.addInput(videoDeviceInput)

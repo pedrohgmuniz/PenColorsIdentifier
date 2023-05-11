@@ -18,6 +18,8 @@
 		1DD106252A0C1ECF00FF1FB9 /* CameraFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD106242A0C1ECF00FF1FB9 /* CameraFrameView.swift */; };
 		1DD106272A0C1F8E00FF1FB9 /* CameraFrameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD106262A0C1F8E00FF1FB9 /* CameraFrameHandler.swift */; };
 		1DD1062B2A0C291000FF1FB9 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD1062A2A0C291000FF1FB9 /* CameraView.swift */; };
+		1DD1062D2A0D350900FF1FB9 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD1062C2A0D350900FF1FB9 /* ViewRouter.swift */; };
+		1DD1062F2A0D361E00FF1FB9 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD1062E2A0D361E00FF1FB9 /* MotherView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		1DD106242A0C1ECF00FF1FB9 /* CameraFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFrameView.swift; sourceTree = "<group>"; };
 		1DD106262A0C1F8E00FF1FB9 /* CameraFrameHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFrameHandler.swift; sourceTree = "<group>"; };
 		1DD1062A2A0C291000FF1FB9 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CameraView.swift; path = ViewModels/CameraView.swift; sourceTree = "<group>"; };
+		1DD1062C2A0D350900FF1FB9 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		1DD1062E2A0D361E00FF1FB9 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				1DD105F52A03E71700FF1FB9 /* PenColorsIdentifierApp.swift */,
 				1DD1062A2A0C291000FF1FB9 /* CameraView.swift */,
 				1DD105F72A03E71700FF1FB9 /* OnboardingView.swift */,
+				1DD1062C2A0D350900FF1FB9 /* ViewRouter.swift */,
+				1DD1062E2A0D361E00FF1FB9 /* MotherView.swift */,
 				1DD105F92A03E71800FF1FB9 /* Assets.xcassets */,
 				1DD105FB2A03E71800FF1FB9 /* Preview Content */,
 			);
@@ -278,9 +284,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DD106272A0C1F8E00FF1FB9 /* CameraFrameHandler.swift in Sources */,
+				1DD1062D2A0D350900FF1FB9 /* ViewRouter.swift in Sources */,
 				1DD105F82A03E71700FF1FB9 /* OnboardingView.swift in Sources */,
 				1DD1062B2A0C291000FF1FB9 /* CameraView.swift in Sources */,
 				1DD105F62A03E71700FF1FB9 /* PenColorsIdentifierApp.swift in Sources */,
+				1DD1062F2A0D361E00FF1FB9 /* MotherView.swift in Sources */,
 				1DD106232A0431CF00FF1FB9 /* ViewModel.swift in Sources */,
 				1DD106252A0C1ECF00FF1FB9 /* CameraFrameView.swift in Sources */,
 			);

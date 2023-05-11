@@ -11,7 +11,7 @@ import SwiftUI
 struct PenColorsIdentifierApp: App {
     var body: some Scene {
         WindowGroup {
-            CameraView()
+            MotherView().environmentObject(ViewRouter())
         }
     }
 }

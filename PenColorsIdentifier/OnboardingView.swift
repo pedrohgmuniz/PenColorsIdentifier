@@ -13,7 +13,7 @@ Este app identifica as cores de canetas esferográficas da Faber Castell atravé
 Você pode acessar esta explicação novamente clicando no botão de ajuda.
 """
 
-struct CameraView: View {
+struct OnBoardingView: View {
     var body: some View {
         NavigationView {
             VStack {
@@ -26,9 +26,7 @@ struct CameraView: View {
 
                 Spacer()
 
-                Button {
-                    // action
-                } label: {
+                NavigationLink(destination: CameraView()) {
                     Text("Iniciar câmera")
                         .font(.system(size: 24, weight: .bold))
                         .frame(width: 280, height: 50)
@@ -53,6 +51,6 @@ struct CameraView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        CameraView()
+        OnBoardingView()
     }
 }
